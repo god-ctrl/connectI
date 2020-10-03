@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1 id="page-heading">Todo App</h1>
+        <div id="contactList">
+         
+                <% for(let i of contact_list){%>
+                    
+                    
+                        <div class="contact">
+                            <div>
+                                <%=i.description%>
+                            </div>
+                            <div>
+                            <%=i.date%>
+                            <a href="/delete-contact/?id=<%=i._id%>">
+                            <img src="/images/close.png">
+                            </a>
+                            </div>
+                        </div>
+                        
+                    
+                <%}%>
+            
+        </div>
+        <div id="contactForm">
+        <form action="/create-todo" method="POST">
+            <input type="text" name="description" placeholder="description" required>
+            <input type="date" name="date" placeholder="date" required>
+            <button type="submit">Add Task</button>
+        </form>
+        </div>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

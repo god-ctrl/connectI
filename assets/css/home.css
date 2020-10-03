@@ -1,0 +1,51 @@
+body{
+    
+    margin:0;
+    font-family: sans-serif;
+
+}
+li{
+    display: inline;
+}
+#page-heading{
+    text-align:center;
+    margin-top:25px;
+    color:grey;
+}
+#contactList{
+    width:430px;
+    border:0px;
+    margin: 4px auto;
+}
+.contact{
+    background-color: rgb(100, 148, 236);
+    color: rgb(219, 219, 219);
+    margin: 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.contact img{
+    height:20px ;
+    width: 20px;
+}
+.contact:hover{
+    background-color: cadetblue;
+}
+#contactForm{
+    border: 0px;
+    margin: 0px auto;
+   text-align: center;
+}
+input{
+    /* border: 0px; */
+    /* border-bottom: 1px; */
+    border: 0;
+    border-bottom: 1px solid grey;
+    outline: 0;
+}
+#contactForm button{
+    background-color: darkgrey;
+    color: white;
+
+}
